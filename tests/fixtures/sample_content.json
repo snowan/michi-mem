@@ -1,0 +1,15 @@
+{
+  "project": "/Users/test/project",
+  "branch": "main",
+  "summary": "Implemented user authentication",
+  "work_done": [
+    "Added login endpoint",
+    "Created user model"
+  ],
+  "decisions": [
+    "Use JWT for authentication"
+  ],
+  "preferences": [
+    "Prefer pytest over unittest"
+  ]
+}
