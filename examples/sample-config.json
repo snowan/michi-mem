@@ -1,0 +1,9 @@
+{
+  "diary_retention_days": 30,
+  "reflection_retention": "permanent",
+  "auto_reflect_threshold": 5,
+  "auto_record": true,
+  "auto_record_min_turns": 3,
+  "diary_dir": "~/.claude/memory/michi-mem/diary",
+  "reflections_dir": "~/.claude/memory/michi-mem/reflections"
+}
