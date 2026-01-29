@@ -1,0 +1,26 @@
+{
+  "name": "michi-mem",
+  "version": "1.0.0",
+  "description": "Automated memory lifecycle for Claude Code - diary, reflect, and cleanup without manual intervention",
+  "author": "michi",
+  "repository": "https://github.com/<username>/michi-mem",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "diary",
+      "description": "Create a structured diary entry from the current session",
+      "file": "commands/diary.md"
+    },
+    {
+      "name": "reflect",
+      "description": "Analyze diary entries to identify patterns and propose CLAUDE.md updates",
+      "file": "commands/reflect.md"
+    },
+    {
+      "name": "mem-status",
+      "description": "Show memory system statistics and health",
+      "file": "commands/mem-status.md"
+    }
+  ],
+  "hooks": "scripts/hooks/hooks.json"
+}
