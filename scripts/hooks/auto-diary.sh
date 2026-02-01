@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 # michi-mem auto-diary: Stop hook that prompts Claude to create diary entries
 # Tracks session turns via state files, only prompts after min_turns threshold
 
@@ -7,7 +8,7 @@ STATE_DIR="$HOME/.claude/memory/michi-mem/.state"
 mkdir -p "$STATE_DIR"
 
 INPUT=$(cat)
-SESSION_ID=$(echo "$INPUT" | python3 -c "import sys,json; print(json.load(sys.stdin).get('session_id','unknown'))" 2>/dev/null)
+SESSION_ID=$(echo "$INPUT" | python3 -c "import sys,json; print(json.load(sys.stdin).get('session_id','unknown'))" 2>/dev/null || echo "unknown")
 
 if [ "$SESSION_ID" = "unknown" ] || [ -z "$SESSION_ID" ]; then
   exit 0

@@ -98,15 +98,16 @@ Initial release of michi-mem - automated memory lifecycle for Claude Code.
 
 ### Testing Summary
 
-**Unit Tests**: 24 tests passing
-- Configuration: 8 tests (validation, defaults, edge cases)
-- Diary Writer: 9 tests (creation, formatting, session numbering)
-- Pattern Analyzer: 7 tests (unprocessed entries, pattern classification, processed log)
+**Unit Tests**: 16 tests passing
+- Configuration: 5 tests (validation, defaults, edge cases)
+- Diary Writer: 5 tests (creation, formatting, session numbering)
+- Pattern Analyzer: 6 tests (unprocessed entries, pattern classification, processed log)
 
-**Integration Tests**: 5 scenarios passing
-- Diary creation workflow
-- Pattern analysis with known patterns
-- Cleanup with retention policy
+**Integration Tests**: 11 assertions passing
+- Config module creation and validation
+- Diary creation workflow with session numbering
+- Pattern analysis with known patterns (strong/moderate/emerging)
+- Cleanup with retention policy and state file management
 - End-to-end multi-session workflow
 - Error handling and recovery
 
